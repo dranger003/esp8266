@@ -1,6 +1,8 @@
 //////////////////////////////////////////////////
 // rBoot open source boot loader for ESP8266.
+// Copyright 2015 Richard A Burton
 // richardaburton@gmail.com
+// See license.txt for license terms.
 //////////////////////////////////////////////////
 
 #include "rboot-private.h"
@@ -139,7 +141,8 @@ static uint32 NOINLINE find_image() {
 	rboot_config *romconf = (rboot_config*)buffer;
 	rom_header *header = (rom_header*)buffer;
 	
-	ets_delay_us(2000000);
+	// delay to slow boot (help see messages when debugging)
+	//ets_delay_us(2000000);
 	
 	ets_printf("\r\nrBoot v1.0.0 - richardaburton@gmail.com\r\n");
 	
