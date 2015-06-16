@@ -3,7 +3,7 @@
 # https://github.com/raburton/esp8266
 #
 
-SDK_BASE   ?= ../../esp_iot_sdk_v1.1.1
+SDK_BASE   ?= ../../esp_iot_sdk_v1.1.2
 SDK_LIBDIR  = lib
 SDK_INCDIR  = include
 
