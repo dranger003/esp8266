@@ -33,13 +33,13 @@ rboot:
 	@cd rboot && $(MAKE)
 
 rboot-sampleproject/rboot.h: rboot/rboot.h
-	@cp $< $@
+	@ln -s $< $@
 
 rboot-sampleproject/rboot-ota.h: rboot-ota/rboot-ota.h
-	@cp $< $@
+	@ln -s $< $@
 
 rboot-sampleproject/rboot-ota.c: rboot-ota/rboot-ota.c
-	@cp $< $@
+	@ln -s $< $@
 
 rboot-sampleproject: rboot-sampleproject/rboot.h rboot-sampleproject/rboot-ota.h rboot-sampleproject/rboot-ota.c
 	@echo "Building rBoot sample project"
