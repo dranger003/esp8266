@@ -5,7 +5,7 @@ LIBS    = c gcc hal phy net80211 lwip wpa main pp
 CFLAGS  = -Os -g -O2 -Wpointer-arith -Wundef -Werror -Wl,-EL -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals  -D__ets__ -DICACHE_FLASH
 LDFLAGS = -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static
 
-SDK_BASE   = ../esp_iot_sdk_v1.1.1
+SDK_BASE   = ../../esp_iot_sdk_v1.1.1
 SDK_LIBDIR = lib
 SDK_INCDIR = include
 
